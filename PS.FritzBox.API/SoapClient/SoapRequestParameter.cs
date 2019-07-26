@@ -3,7 +3,7 @@
     /// <summary>
     /// class representing soap request parameters
     /// </summary>
-    internal class SoapRequestParameter
+    public class SoapRequestParameter
     {
         public SoapRequestParameter(string name, object value)
         {

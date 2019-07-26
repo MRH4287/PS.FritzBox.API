@@ -79,7 +79,7 @@ namespace PS.FritzBox.API.Base
         /// <param name="action">soap action to execute</param>
         /// <param name="parameter">soap request parameters</param>
         /// <returns>the resulting xml document</returns>
-        internal async Task<XDocument> InvokeAsync(string action, params SoapRequestParameter[] parameter)
+        protected async Task<XDocument> InvokeAsync(string action, params SoapRequestParameter[] parameter)
         {
             SoapClient client = new SoapClient();
 
